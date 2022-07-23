@@ -1,0 +1,131 @@
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #000;
+  box-sizing: border-box;
+  background-color: #f0f2cb;
+  padding: 48px;
+  font-family: "Montserrat", sans-serif;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bolder;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.instructions {
+  text-align: center;
+}
+
+.highlight {
+  font-weight: 800;
+}
+
+/* img logo styling */
+.logo {
+  width: 80%;
+  max-width: 200px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#parent {
+  max-width: 50%;
+  max-width: 1080px;
+  padding: 40px 0 0;
+  margin: 0 auto;
+}
+#child {
+  max-width: 50%;
+  max-width: 1080px;
+  padding: 40px 0 0;
+  margin: 0 auto;
+}
+
+#parent div {
+  font-weight: 500;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 64px;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  background-color: white;
+  border-radius: 0;
+  margin: 0.5em;
+  font-size: 1.2rem;
+}
+
+#child p {
+  font-weight: 500;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 34px;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+  background-color: #91b9f5;
+  border-radius: 0;
+  margin: 0.5em;
+  font-size: 1.2rem;
+}
+
+/*a bit of animation*/
+#parent div:hover {
+  background-color: #91b9f5;
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+#child p:hover {
+  background-color: #91b9f5;
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* delete every 3rd and 5th  element*/
+
+#parent div:nth-child(3n) {
+  display: none;
+}
+#parent div:nth-child(5n) {
+  display: none;
+}
+
+/*footer*/
+
+footer {
+  width: 90%;
+  max-width: 1080px;
+  padding: 40px 0 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
